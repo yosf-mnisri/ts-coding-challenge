@@ -18,83 +18,83 @@ Given(/^A Hedera account with more than (\d+) hbar$/, async function (expectedBa
 
 });
 
-When(/^I create a token named Test Token \(HTT\)$/, function () {
+When(/^I create a token named Test Token \(HTT\)$/, async function () {
 
 });
 
-Then(/^The token has the name "([^"]*)"$/, function () {
+Then(/^The token has the name "([^"]*)"$/, async function () {
 
 });
 
-Then(/^The token has the symbol "([^"]*)"$/, function () {
+Then(/^The token has the symbol "([^"]*)"$/, async function () {
 
 });
 
-Then(/^The token has (\d+) decimals$/, function () {
+Then(/^The token has (\d+) decimals$/, async function () {
 
 });
 
-Then(/^The token is owned by the account$/, function () {
+Then(/^The token is owned by the account$/, async function () {
 
 });
 
-Then(/^An attempt to mint (\d+) additional tokens succeeds$/, function () {
+Then(/^An attempt to mint (\d+) additional tokens succeeds$/, async function () {
 
 });
-When(/^I create a fixed supply token named Test Token \(HTT\) with (\d+) tokens$/, function () {
+When(/^I create a fixed supply token named Test Token \(HTT\) with (\d+) tokens$/, async function () {
 
 });
-Then(/^The total supply of the token is (\d+)$/, function () {
+Then(/^The total supply of the token is (\d+)$/, async function () {
 
 });
-Then(/^An attempt to mint tokens fails$/, function () {
+Then(/^An attempt to mint tokens fails$/, async function () {
 
 });
-Given(/^A first hedera account with more than (\d+) hbar$/, function () {
+Given(/^A first hedera account with more than (\d+) hbar$/, async function () {
 
 });
-Given(/^A second Hedera account$/, function () {
+Given(/^A second Hedera account$/, async function () {
 
 });
-Given(/^A token named Test Token \(HTT\) with (\d+) tokens$/, function () {
+Given(/^A token named Test Token \(HTT\) with (\d+) tokens$/, async function () {
 
 });
-Given(/^The first account holds (\d+) HTT tokens$/, function () {
+Given(/^The first account holds (\d+) HTT tokens$/, async function () {
 
 });
-Given(/^The second account holds (\d+) HTT tokens$/, function () {
+Given(/^The second account holds (\d+) HTT tokens$/, async function () {
 
 });
-When(/^The first account creates a transaction to transfer (\d+) HTT tokens to the second account$/, function () {
+When(/^The first account creates a transaction to transfer (\d+) HTT tokens to the second account$/, async function () {
 
 });
-When(/^The first account submits the transaction$/, function () {
+When(/^The first account submits the transaction$/, async function () {
 
 });
-When(/^The second account creates a transaction to transfer (\d+) HTT tokens to the first account$/, function () {
+When(/^The second account creates a transaction to transfer (\d+) HTT tokens to the first account$/, async function () {
 
 });
-Then(/^The first account has paid for the transaction fee$/, function () {
+Then(/^The first account has paid for the transaction fee$/, async function () {
 
 });
-Given(/^A first hedera account with more than (\d+) hbar and (\d+) HTT tokens$/, function () {
+Given(/^A first hedera account with more than (\d+) hbar and (\d+) HTT tokens$/, async function () {
 
 });
-Given(/^A second Hedera account with (\d+) hbar and (\d+) HTT tokens$/, function () {
+Given(/^A second Hedera account with (\d+) hbar and (\d+) HTT tokens$/, async function () {
 
 });
-Given(/^A third Hedera account with (\d+) hbar and (\d+) HTT tokens$/, function () {
+Given(/^A third Hedera account with (\d+) hbar and (\d+) HTT tokens$/, async function () {
 
 });
-Given(/^A fourth Hedera account with (\d+) hbar and (\d+) HTT tokens$/, function () {
+Given(/^A fourth Hedera account with (\d+) hbar and (\d+) HTT tokens$/, async function () {
 
 });
-When(/^A transaction is created to transfer (\d+) HTT tokens out of the first and second account and (\d+) HTT tokens into the third account and (\d+) HTT tokens into the fourth account$/, function () {
+When(/^A transaction is created to transfer (\d+) HTT tokens out of the first and second account and (\d+) HTT tokens into the third account and (\d+) HTT tokens into the fourth account$/, async function () {
 
 });
-Then(/^The third account holds (\d+) HTT tokens$/, function () {
+Then(/^The third account holds (\d+) HTT tokens$/, async function () {
 
 });
-Then(/^The fourth account holds (\d+) HTT tokens$/, function () {
+Then(/^The fourth account holds (\d+) HTT tokens$/, async function () {
 
 });

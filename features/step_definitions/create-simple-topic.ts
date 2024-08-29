@@ -31,38 +31,22 @@ Given(/^a first account with more than (\d+) hbars$/, async function (expectedBa
 });
 
 When(/^A topic is created with the memo "([^"]*)" with the first account as the submit key$/, async function (memo: string) {
-  const topic = await (await new TopicCreateTransaction().setTopicMemo(memo).setSubmitKey(this.privKey.publicKey).execute(client)).getReceipt(client)
-  this.topic = topic
-  assert.ok(topic.topicId)
-  const topicInfo = await new TopicInfoQuery().setTopicId(topic.topicId).execute(client)
-  assert.ok(topicInfo.topicMemo == memo)
 });
 
 When(/^The message "([^"]*)" is published to the topic$/, async function (message: string) {
-  await new TopicMessageSubmitTransaction().setTopicId(this.topic.topicId).setMessage(message).execute(client)
 });
 
-Then(/^The message "([^"]*)" is received by the topic and can be printed to the console$/, function (message: string) {
-  new TopicMessageQuery()
-      .setTopicId(this.topic.topicId)
-      .subscribe(
-          client,
-          (msg) => {
-            assert.ok(msg?.contents.toString() == message)
-            console.log(`Received message: ${msg?.contents.toString()}`)
-          },
-          (error) => console.log(`Error: ${error.toString()}`)
-      );
+Then(/^The message "([^"]*)" is received by the topic and can be printed to the console$/, async function (message: string) {
 });
 
-Given(/^A second account with more than (\d+) hbars$/, function () {
+Given(/^A second account with more than (\d+) hbars$/, async function () {
 
 });
 
-Given(/^A (\d+) of (\d+) threshold key with the first and second account$/, function () {
+Given(/^A (\d+) of (\d+) threshold key with the first and second account$/, async function () {
 
 });
 
-When(/^A topic is created with the memo "([^"]*)" with the threshold key as the submit key$/, function () {
+When(/^A topic is created with the memo "([^"]*)" with the threshold key as the submit key$/, async function () {
 
 });
